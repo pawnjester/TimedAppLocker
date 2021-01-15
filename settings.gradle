@@ -1,0 +1,5 @@
+include ':data'
+include ':cache'
+include ':ui'
+include ':app'
+rootProject.name = "TimedAppLocker"
