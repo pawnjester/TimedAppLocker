@@ -38,28 +38,20 @@ dependencies {
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    def cacheDependencies = rootProject.ext
-    def testDependencies = rootProject.ext.testDependencies
+    def coreDependencies = rootProject.ext
 
     implementation(
-            cacheDependencies.appDependencies.daggerHiltViewModel,
-            cacheDependencies.appDependencies.daggerHiltAndroid,
-            cacheDependencies.appDependencies.javax,
+            coreDependencies.appDependencies.daggerHiltViewModel,
+            coreDependencies.appDependencies.daggerHiltAndroid,
+            coreDependencies.appDependencies.javax,
 
-            cacheDependencies.roomDependencies.roomDB,
+            coreDependencies.roomDependencies.roomDB,
 
-            project(':data')
+            project(":data"),
+            project(":domain")
     )
-    kapt cacheDependencies.appDependencies.daggerXcompiler
-    kapt cacheDependencies.roomDependencies.roomCompiler
-    api cacheDependencies.roomDependencies.roomRuntime
-    kapt cacheDependencies.appDependencies.daggerCompiler
 
-    testImplementation(
-            testDependencies.testRunner,
-            testDependencies.androidXTest,
-            testDependencies.androidXTestCore,
-            testDependencies.roboelectric,
-            testDependencies.truth,
-    )
+    kapt coreDependencies.appDependencies.daggerXcompiler
+    kapt coreDependencies.roomDependencies.roomCompiler
+    kapt coreDependencies.appDependencies.daggerCompiler
 }

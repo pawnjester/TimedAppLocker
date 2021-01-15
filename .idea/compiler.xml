@@ -4,6 +4,7 @@
     <bytecodeTargetLevel target="1.7">
       <module name="TimedAppLocker.app" target="1.8" />
       <module name="TimedAppLocker.cache" target="1.8" />
+      <module name="TimedAppLocker.core" target="1.8" />
       <module name="TimedAppLocker.ui" target="1.8" />
     </bytecodeTargetLevel>
   </component>

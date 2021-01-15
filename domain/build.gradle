@@ -11,13 +11,12 @@ java {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    def dataDependencies = rootProject.ext
+    def domainDependencies = rootProject.ext
 
     implementation(
-            dataDependencies.appDependencies.kotlin,
-            dataDependencies.appDependencies.javax,
-            dataDependencies.appDependencies.coroutines,
+            domainDependencies.appDependencies.kotlin,
+            domainDependencies.appDependencies.javax,
+            domainDependencies.appDependencies.coroutines,
 
-            project(':domain')
     )
 }
