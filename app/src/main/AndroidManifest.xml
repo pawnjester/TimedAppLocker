@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:name=".ApplicationClass"
         android:theme="@style/Theme.TimedAppLocker">
-        <activity android:name="com.example.ui.MainActivity">
+        <activity android:name="com.example.ui.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
