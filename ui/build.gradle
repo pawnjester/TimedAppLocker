@@ -66,6 +66,8 @@ dependencies {
             presentationDependencies.uiDependencies.androidLegacy,
             presentationDependencies.uiDependencies.appCompat,
             presentationDependencies.uiDependencies.liveData,
+            presentationDependencies.uiDependencies.circularImage,
+            presentationDependencies.uiDependencies.coil,
 
             project(":core"),
             project(":domain"),

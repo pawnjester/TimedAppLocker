@@ -35,6 +35,8 @@ ext {
     rules = "1.2.0"
     mockitoVersion = "2.2.0"
     lifecycleVersion = "2.2.0"
+    circularImageViewVersion="3.1.0"
+    coilVersion = "1.1.1"
 
 
     roomDependencies = [
@@ -66,7 +68,9 @@ ext {
             constraintLayout  : "androidx.constraintlayout:constraintlayout:${constraintLayoutVersion}",
             androidLegacy     : "androidx.legacy:legacy-support-v4:${legacyVersion}",
             appCompat         : "androidx.appcompat:appcompat:${appCompatVersion}",
-            liveData          : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
+            liveData          : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion",
+            circularImage     : "de.hdodenhof:circleimageview:${circularImageViewVersion}",
+            coil              : "io.coil-kt:coil:$coilVersion"
     ]
 
     testDependencies = [

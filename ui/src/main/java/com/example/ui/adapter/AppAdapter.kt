@@ -4,8 +4,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ui.adapter.viewHolder.AppViewHolder
 import com.example.ui.model.AppModel
+import javax.inject.Inject
 
-class AppAdapter : RecyclerView.Adapter<AppViewHolder>() {
+class AppAdapter @Inject constructor() : RecyclerView.Adapter<AppViewHolder>() {
 
     private val installedApps = mutableListOf<AppModel>()
 

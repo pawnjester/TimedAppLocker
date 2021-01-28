@@ -1,5 +1,6 @@
 package com.example.domain.models
 
 data class AppDomain (
-    val name: String
+    val appName: String,
+    val appIcon: String
 )
